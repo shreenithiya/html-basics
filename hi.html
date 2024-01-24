@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		HTML DOM Input Text Object
+	</title>
+</head> 
+<body> 
+	<h1>bcom</h1> 
+	<h2> Input Text </h2>
+	<input type="text" id="text_id" value="Hello" text-align="center">
+	
+<p>Click on button to display the text field</p>
+
+	<button onclick="Bcom()">Click Here!</button>
+	<p id="G">Hi</p>
+	<script>
+        function Bcom() {
+            var txt = document.getElementById("text_id").value;
+            document.getElementById("G").innerHTML = txt;
+			console.log(txt)
+        }
+    </script>
+</body>
+</html>
